@@ -25,7 +25,7 @@ if (!empty($phone)) {
         $result = $amo->createLead($contactId);
     }
     
-    $to = 'sk@salesgenerator.pro,karnaushkina@salesgenerator.pro';
+    $to = 'order@salesgenerator.pro';
     $subject = 'Получите набор файлов для руководителя';
     $message = "
         Email: $email
