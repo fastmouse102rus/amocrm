@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salesgenerator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&subset=latin,cyrillic&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="hero">
+      <button class="hero__btn btn-model--js" data-id="modal-file" type="button">Кликни</button>
+    </div>
+
+    <div class="modal modal--js" id="modal-ok">
+      <div class="modal-box">
+        <button class="modal-close modal-close--js" data-id="modal-ok"></button>
+
+        <div class="modal-name modal-name--center">
+          Ваша заявка принята! Спасибо за обращение!
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal modal--js" id="modal-file">
+      <div class="modal-box">
+        <button class="modal-close modal-close--js" data-id="modal-file"></button>
+        <div class="modal-list">
+
+          <div class="modal-list__left">
+            <div class="modal-name">
+              Получите набор файлов <br />
+              для руководителя:
+            </div>
+            <div class="modal-img">
+              <img src="/public/modal-format.png" class="d-img" alt="">
+            </div>
+            <div class="modal-img2">
+              <img src="/public/modal-img.jpg" class="d-img" alt="">
+            </div>
+          </div>
+
+          <div class="modal-list__right">
+
+            <form action="/" method="POST" class="modal-form modal-form--js">
+              <div class="modal-form__item">
+                <div class="modal-form__label">Введите Email для получения файлов:</div>
+                <input type="email" placeholder="E-mail" name="email" class="modal-form__input">
+              </div>
+
+              <div class="modal-form__item modal-form__item--last">
+                <div class="modal-form__label">Введите телефон для подтверждения доступа:</div>
+                <input type="text" placeholder="+7 (000) 000-00-00" v-maska="" data-maska="+7 ### ###-##-##" name="phone" class="modal-form__input" required>
+              </div>
+
+              <div class="modal-form__btn">
+                <button type="submit">
+                  <span>Скачать файлы</span>
+                  <i></i>
+                </button>
+              </div>
+
+              <div class="modal-form__bottom">
+                <span>PDF 4,7 MB</span>
+                <span>DOC 0,8 MB</span>
+                <span>XLS 1,2 MB</span>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
